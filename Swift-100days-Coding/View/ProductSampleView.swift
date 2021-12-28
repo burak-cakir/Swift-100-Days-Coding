@@ -22,8 +22,8 @@ func getProducts() -> [Product]{
 
 
 struct ProductSampleView: View {
-    @State var minPrice : String = "0"
-    @State var maxPrice : String = "3001"
+    @State var minPrice : String = ""
+    @State var maxPrice : String = ""
     @State var searchByName : String = ""
     @State var searchDataCount : Int = getProducts().count
     @State var isSortedbyName : Bool = false
@@ -69,14 +69,15 @@ struct ProductSampleView: View {
                     
                    
                 }
-                .foregroundColor(Color.white)
-                
-                .padding()
-                .background(
-                    Color.blue
-                        .cornerRadius(14)
-                        .shadow( radius: 10, x:25)
-                )
+                .buttonStyle(GrowingButton())
+//                .foregroundColor(Color.white)
+//
+//                .padding()
+//                .background(
+//                    Color.blue
+//                        .cornerRadius(14)
+//                        .shadow( radius: 10, x:25)
+//                )
                
             
 
