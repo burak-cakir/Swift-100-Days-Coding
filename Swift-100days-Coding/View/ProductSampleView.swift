@@ -9,7 +9,7 @@ import SwiftUI
 func getProducts() -> [Product]{
     return [
         Product(productName: "Samsung", productDescription: "Samsunuların", productunitInStok: 99, productprice: 3000),
-        Product(productName: "İphone", productDescription: "Amerikandastur", productunitInStok: 989 , productprice: 5000),
+        Product(productName: "İphone", productDescription: "Amerikandastur", productunitInStok: 989 , productprice: 5000, productcategory: productCategory(categoryname: "nnn", categortDescription: "aa")),
         Product(productName: "Huawei", productDescription: "hawurrr", productunitInStok: 109, productprice: 4000),
         Product(productName: "Pringle", productDescription: "PPP", productunitInStok: 109, productprice: 5500),
         Product(productName: "Deneme", productDescription: "PPasdaP", productunitInStok: 1029, productprice: 6500)
@@ -22,8 +22,8 @@ func getProducts() -> [Product]{
 
 
 struct ProductSampleView: View {
-    @State var minPrice : String = ""
-    @State var maxPrice : String = ""
+    @State var minPrice : String = "0"
+    @State var maxPrice : String = "3001"
     @State var searchByName : String = ""
     @State var searchDataCount : Int = getProducts().count
     @State var isSortedbyName : Bool = false
@@ -34,6 +34,7 @@ struct ProductSampleView: View {
     
     var body: some View {
         VStack {
+            
             TextField("Min price", text: $minPrice)
                 .padding()
             TextField("Max price", text: $maxPrice)
@@ -86,6 +87,7 @@ struct ProductSampleView: View {
             
             List (products, id:\.id){ item in
                 Text(item.productName + " / " + String(item.productprice)  )
+                Text(item.productcategory.categoryname)
             }
         }
       

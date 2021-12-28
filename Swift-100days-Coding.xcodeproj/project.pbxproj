@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		199E271A277B8AB500CE6905 /* ProductCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199E2719277B8AB500CE6905 /* ProductCategory.swift */; };
 		19C3861327777F6D0020161F /* Swift_100days_CodingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C3861227777F6D0020161F /* Swift_100days_CodingApp.swift */; };
 		19C3861527777F6D0020161F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C3861427777F6D0020161F /* ContentView.swift */; };
 		19C3861727777F6F0020161F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19C3861627777F6F0020161F /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		199E2719277B8AB500CE6905 /* ProductCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCategory.swift; sourceTree = "<group>"; };
 		19C3860F27777F6D0020161F /* Swift-100days-Coding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift-100days-Coding.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		19C3861227777F6D0020161F /* Swift_100days_CodingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_100days_CodingApp.swift; sourceTree = "<group>"; };
 		19C3861427777F6D0020161F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				19C38626277B3E820020161F /* Product.swift */,
+				199E2719277B8AB500CE6905 /* ProductCategory.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -163,6 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				19C38629277B3F210020161F /* ProductSampleView.swift in Sources */,
+				199E271A277B8AB500CE6905 /* ProductCategory.swift in Sources */,
 				19C3861527777F6D0020161F /* ContentView.swift in Sources */,
 				19C38627277B3E830020161F /* Product.swift in Sources */,
 				19C3861327777F6D0020161F /* Swift_100days_CodingApp.swift in Sources */,

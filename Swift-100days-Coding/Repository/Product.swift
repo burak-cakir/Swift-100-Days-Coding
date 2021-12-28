@@ -14,5 +14,6 @@ struct Product {
     var productunitInStok : Int
     var productprice : Int = 0
     var productisActive : Bool = true
+    var productcategory : productCategory = productCategory(categoryname: "...", categortDescription: "...")
 }
 
