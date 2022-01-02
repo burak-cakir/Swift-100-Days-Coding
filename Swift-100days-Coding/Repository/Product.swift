@@ -12,7 +12,6 @@ struct Product {
     var productName : String
     var productDescription : String
     var productunitInStok : Int
-    
     var productprice : Int = 0
     var productisActive : Bool = true
     var productcategory : productCategory = productCategory(categoryname: "...", categortDescription: "...")
