@@ -19,7 +19,7 @@ struct E_Commerce_View: View {
     
     
     var body: some View {
-        ZStack{
+            ZStack{
             VStack{
                 HStack{
                     Button(action: {}) {

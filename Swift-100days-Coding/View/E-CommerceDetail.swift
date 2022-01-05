@@ -131,6 +131,7 @@ struct E_CommerceDetail: View {
     
     
     }
+        
 }
 }
 
