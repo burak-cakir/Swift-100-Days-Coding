@@ -8,22 +8,43 @@
 import SwiftUI
 
 struct PersonCV: View {
-    @State var itemtext : String = ""
+    @State var itemtext : String = "test"
     
     var body: some View {
-        VStack{
-//            @State var Person = Person()
-            Button("ekle"){
+        NavigationView{
+            VStack{
+    //            @State var Person = Person()
+             
+              TextField("Here write", text: $itemtext)
+                    .font(.headline)
+                    
+                    .background(Color.gray.opacity(3).cornerRadius(10))
+                    .padding(0)
                 
-            }.padding()
-                .foregroundColor(.white)
-                .font(.title)
-                .background(.black)
-                .cornerRadius(5)
-            
-          TextField("Here write", text: $itemtext)
-            Text(itemtext)
-          
+                Button(action: {
+                    
+                }, label: {
+                    Text("ADD")
+                       .frame(maxWidth : .infinity)
+                        .foregroundColor(.white)
+                        .font(.headline)
+                        .background(Color.blue.opacity(3).cornerRadius(10))
+                        .padding()
+                    
+                })
+                
+                
+                
+                Text(itemtext)
+                    .font(.caption)
+                    .background(Color.gray.opacity(3).cornerRadius(3))
+                    .padding()
+                
+              Spacer()
+                    
+            }
+            .padding()
+            .navigationTitle("BOOTCAMP")
         }
     }
 }
