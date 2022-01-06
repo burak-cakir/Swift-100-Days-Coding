@@ -17,6 +17,15 @@
 		199EF11127821ED400F073AA /* E-Com-CustomShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199EF11027821ED400F073AA /* E-Com-CustomShape.swift */; };
 		199EF11327843F6900F073AA /* PersonInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199EF11227843F6900F073AA /* PersonInfo.swift */; };
 		199EF11727844E4400F073AA /* PersonCV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199EF11627844E4400F073AA /* PersonCV.swift */; };
+		19C1DC91278759EC00409CDC /* WebApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C1DC90278759EC00409CDC /* WebApi.swift */; };
+		19C1DC9427875A5900409CDC /* userModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C1DC9327875A5900409CDC /* userModel.swift */; };
+		19C1DC9627875C4900409CDC /* postModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C1DC9527875C4900409CDC /* postModel.swift */; };
+		19C1DC9827875D1800409CDC /* commentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C1DC9727875D1800409CDC /* commentModel.swift */; };
+		19C1DC9A27875D7C00409CDC /* albumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C1DC9927875D7C00409CDC /* albumModel.swift */; };
+		19C1DC9C27875DA800409CDC /* photoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C1DC9B27875DA800409CDC /* photoModel.swift */; };
+		19C1DC9E27875E2F00409CDC /* todoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C1DC9D27875E2F00409CDC /* todoModel.swift */; };
+		19C1DCA027875F1100409CDC /* jsonRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C1DC9F27875F1100409CDC /* jsonRepository.swift */; };
+		19C1DCA227875F3800409CDC /* jsonViewSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C1DCA127875F3800409CDC /* jsonViewSample.swift */; };
 		19C3861327777F6D0020161F /* Swift_100days_CodingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C3861227777F6D0020161F /* Swift_100days_CodingApp.swift */; };
 		19C3861527777F6D0020161F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C3861427777F6D0020161F /* ContentView.swift */; };
 		19C3861727777F6F0020161F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19C3861627777F6F0020161F /* Assets.xcassets */; };
@@ -40,6 +49,15 @@
 		199EF11027821ED400F073AA /* E-Com-CustomShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "E-Com-CustomShape.swift"; sourceTree = "<group>"; };
 		199EF11227843F6900F073AA /* PersonInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonInfo.swift; sourceTree = "<group>"; };
 		199EF11627844E4400F073AA /* PersonCV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCV.swift; sourceTree = "<group>"; };
+		19C1DC90278759EC00409CDC /* WebApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebApi.swift; sourceTree = "<group>"; };
+		19C1DC9327875A5900409CDC /* userModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userModel.swift; sourceTree = "<group>"; };
+		19C1DC9527875C4900409CDC /* postModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = postModel.swift; sourceTree = "<group>"; };
+		19C1DC9727875D1800409CDC /* commentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = commentModel.swift; sourceTree = "<group>"; };
+		19C1DC9927875D7C00409CDC /* albumModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = albumModel.swift; sourceTree = "<group>"; };
+		19C1DC9B27875DA800409CDC /* photoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = photoModel.swift; sourceTree = "<group>"; };
+		19C1DC9D27875E2F00409CDC /* todoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todoModel.swift; sourceTree = "<group>"; };
+		19C1DC9F27875F1100409CDC /* jsonRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jsonRepository.swift; sourceTree = "<group>"; };
+		19C1DCA127875F3800409CDC /* jsonViewSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jsonViewSample.swift; sourceTree = "<group>"; };
 		19C3860F27777F6D0020161F /* Swift-100days-Coding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift-100days-Coding.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		19C3861227777F6D0020161F /* Swift_100days_CodingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_100days_CodingApp.swift; sourceTree = "<group>"; };
 		19C3861427777F6D0020161F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -74,6 +92,27 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		19C1DC8F278759C800409CDC /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				19C1DC90278759EC00409CDC /* WebApi.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		19C1DC9227875A2D00409CDC /* jsonModel */ = {
+			isa = PBXGroup;
+			children = (
+				19C1DC9327875A5900409CDC /* userModel.swift */,
+				19C1DC9527875C4900409CDC /* postModel.swift */,
+				19C1DC9727875D1800409CDC /* commentModel.swift */,
+				19C1DC9927875D7C00409CDC /* albumModel.swift */,
+				19C1DC9B27875DA800409CDC /* photoModel.swift */,
+				19C1DC9D27875E2F00409CDC /* todoModel.swift */,
+			);
+			path = jsonModel;
+			sourceTree = "<group>";
+		};
 		19C3860627777F6D0020161F = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +132,8 @@
 		19C3861127777F6D0020161F /* Swift-100days-Coding */ = {
 			isa = PBXGroup;
 			children = (
+				19C1DC9227875A2D00409CDC /* jsonModel */,
+				19C1DC8F278759C800409CDC /* Config */,
 				199EF1092781D6B700F073AA /* Model */,
 				19C38625277B3E6A0020161F /* Repository */,
 				19C3862027778F6E0020161F /* View */,
@@ -124,6 +165,7 @@
 				199EF11027821ED400F073AA /* E-Com-CustomShape.swift */,
 				199EF11627844E4400F073AA /* PersonCV.swift */,
 				19D93045278639DF00628283 /* OrderView.swift */,
+				19C1DCA127875F3800409CDC /* jsonViewSample.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -135,6 +177,7 @@
 				199E2719277B8AB500CE6905 /* ProductCategory.swift */,
 				199E271B277B9E6B00CE6905 /* ButtonStyle.swift */,
 				19D93043278639CE00628283 /* OrderRepository.swift */,
+				19C1DC9F27875F1100409CDC /* jsonRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -211,9 +254,12 @@
 			files = (
 				19C38629277B3F210020161F /* ProductSampleView.swift in Sources */,
 				199EF10F2781F2D800F073AA /* E-CommerceDetail.swift in Sources */,
+				19C1DC9E27875E2F00409CDC /* todoModel.swift in Sources */,
 				199E271A277B8AB500CE6905 /* ProductCategory.swift in Sources */,
+				19C1DCA227875F3800409CDC /* jsonViewSample.swift in Sources */,
 				19D93044278639CE00628283 /* OrderRepository.swift in Sources */,
 				199EF1082781C8BB00F073AA /* TabButtonView.swift in Sources */,
+				19C1DC9627875C4900409CDC /* postModel.swift in Sources */,
 				19D93042278639BB00628283 /* OrderModel.swift in Sources */,
 				199EF11727844E4400F073AA /* PersonCV.swift in Sources */,
 				19C3861527777F6D0020161F /* ContentView.swift in Sources */,
@@ -222,11 +268,17 @@
 				199EF1062781C01B00F073AA /* E-Commerce-View.swift in Sources */,
 				199EF11327843F6900F073AA /* PersonInfo.swift in Sources */,
 				199EF11127821ED400F073AA /* E-Com-CustomShape.swift in Sources */,
+				19C1DC9C27875DA800409CDC /* photoModel.swift in Sources */,
 				199EF10B2781D6CE00F073AA /* E-Commer-item.swift in Sources */,
 				19C386242777900B0020161F /* SwiftUIView-1-Beginning.swift in Sources */,
 				19D93046278639DF00628283 /* OrderView.swift in Sources */,
+				19C1DCA027875F1100409CDC /* jsonRepository.swift in Sources */,
 				199E271C277B9E6B00CE6905 /* ButtonStyle.swift in Sources */,
 				199EF10D2781E4F700F073AA /* E-Commer-CardView.swift in Sources */,
+				19C1DC9827875D1800409CDC /* commentModel.swift in Sources */,
+				19C1DC9427875A5900409CDC /* userModel.swift in Sources */,
+				19C1DC9A27875D7C00409CDC /* albumModel.swift in Sources */,
+				19C1DC91278759EC00409CDC /* WebApi.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
