@@ -26,6 +26,11 @@
 		19C1DC9E27875E2F00409CDC /* todoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C1DC9D27875E2F00409CDC /* todoModel.swift */; };
 		19C1DCA027875F1100409CDC /* jsonRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C1DC9F27875F1100409CDC /* jsonRepository.swift */; };
 		19C1DCA227875F3800409CDC /* jsonViewSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C1DCA127875F3800409CDC /* jsonViewSample.swift */; };
+		19C1DCA52787883D00409CDC /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 19C1DCA42787883D00409CDC /* Alamofire */; };
+		19C1DCA72787892500409CDC /* GenericRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C1DCA62787892500409CDC /* GenericRepository.swift */; };
+		19C1DCA92787896300409CDC /* jsonGenericRepoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C1DCA82787896300409CDC /* jsonGenericRepoView.swift */; };
+		19C1DCAB27879C7400409CDC /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C1DCAA27879C7400409CDC /* ProductModel.swift */; };
+		19C1DCAD27879CB600409CDC /* ProductAlamofireExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C1DCAC27879CB600409CDC /* ProductAlamofireExample.swift */; };
 		19C3861327777F6D0020161F /* Swift_100days_CodingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C3861227777F6D0020161F /* Swift_100days_CodingApp.swift */; };
 		19C3861527777F6D0020161F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C3861427777F6D0020161F /* ContentView.swift */; };
 		19C3861727777F6F0020161F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19C3861627777F6F0020161F /* Assets.xcassets */; };
@@ -58,6 +63,10 @@
 		19C1DC9D27875E2F00409CDC /* todoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todoModel.swift; sourceTree = "<group>"; };
 		19C1DC9F27875F1100409CDC /* jsonRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jsonRepository.swift; sourceTree = "<group>"; };
 		19C1DCA127875F3800409CDC /* jsonViewSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jsonViewSample.swift; sourceTree = "<group>"; };
+		19C1DCA62787892500409CDC /* GenericRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericRepository.swift; sourceTree = "<group>"; };
+		19C1DCA82787896300409CDC /* jsonGenericRepoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jsonGenericRepoView.swift; sourceTree = "<group>"; };
+		19C1DCAA27879C7400409CDC /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
+		19C1DCAC27879CB600409CDC /* ProductAlamofireExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductAlamofireExample.swift; sourceTree = "<group>"; };
 		19C3860F27777F6D0020161F /* Swift-100days-Coding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift-100days-Coding.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		19C3861227777F6D0020161F /* Swift_100days_CodingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_100days_CodingApp.swift; sourceTree = "<group>"; };
 		19C3861427777F6D0020161F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -76,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19C1DCA52787883D00409CDC /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,6 +119,7 @@
 				19C1DC9927875D7C00409CDC /* albumModel.swift */,
 				19C1DC9B27875DA800409CDC /* photoModel.swift */,
 				19C1DC9D27875E2F00409CDC /* todoModel.swift */,
+				19C1DCAA27879C7400409CDC /* ProductModel.swift */,
 			);
 			path = jsonModel;
 			sourceTree = "<group>";
@@ -166,6 +177,8 @@
 				199EF11627844E4400F073AA /* PersonCV.swift */,
 				19D93045278639DF00628283 /* OrderView.swift */,
 				19C1DCA127875F3800409CDC /* jsonViewSample.swift */,
+				19C1DCA82787896300409CDC /* jsonGenericRepoView.swift */,
+				19C1DCAC27879CB600409CDC /* ProductAlamofireExample.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -178,6 +191,7 @@
 				199E271B277B9E6B00CE6905 /* ButtonStyle.swift */,
 				19D93043278639CE00628283 /* OrderRepository.swift */,
 				19C1DC9F27875F1100409CDC /* jsonRepository.swift */,
+				19C1DCA62787892500409CDC /* GenericRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -198,6 +212,9 @@
 			dependencies = (
 			);
 			name = "Swift-100days-Coding";
+			packageProductDependencies = (
+				19C1DCA42787883D00409CDC /* Alamofire */,
+			);
 			productName = "Swift-100days-Coding";
 			productReference = 19C3860F27777F6D0020161F /* Swift-100days-Coding.app */;
 			productType = "com.apple.product-type.application";
@@ -226,6 +243,9 @@
 				Base,
 			);
 			mainGroup = 19C3860627777F6D0020161F;
+			packageReferences = (
+				19C1DCA32787883D00409CDC /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 19C3861027777F6D0020161F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -255,12 +275,14 @@
 				19C38629277B3F210020161F /* ProductSampleView.swift in Sources */,
 				199EF10F2781F2D800F073AA /* E-CommerceDetail.swift in Sources */,
 				19C1DC9E27875E2F00409CDC /* todoModel.swift in Sources */,
+				19C1DCA72787892500409CDC /* GenericRepository.swift in Sources */,
 				199E271A277B8AB500CE6905 /* ProductCategory.swift in Sources */,
 				19C1DCA227875F3800409CDC /* jsonViewSample.swift in Sources */,
 				19D93044278639CE00628283 /* OrderRepository.swift in Sources */,
 				199EF1082781C8BB00F073AA /* TabButtonView.swift in Sources */,
 				19C1DC9627875C4900409CDC /* postModel.swift in Sources */,
 				19D93042278639BB00628283 /* OrderModel.swift in Sources */,
+				19C1DCAD27879CB600409CDC /* ProductAlamofireExample.swift in Sources */,
 				199EF11727844E4400F073AA /* PersonCV.swift in Sources */,
 				19C3861527777F6D0020161F /* ContentView.swift in Sources */,
 				19C38627277B3E830020161F /* Product.swift in Sources */,
@@ -270,10 +292,12 @@
 				199EF11127821ED400F073AA /* E-Com-CustomShape.swift in Sources */,
 				19C1DC9C27875DA800409CDC /* photoModel.swift in Sources */,
 				199EF10B2781D6CE00F073AA /* E-Commer-item.swift in Sources */,
+				19C1DCAB27879C7400409CDC /* ProductModel.swift in Sources */,
 				19C386242777900B0020161F /* SwiftUIView-1-Beginning.swift in Sources */,
 				19D93046278639DF00628283 /* OrderView.swift in Sources */,
 				19C1DCA027875F1100409CDC /* jsonRepository.swift in Sources */,
 				199E271C277B9E6B00CE6905 /* ButtonStyle.swift in Sources */,
+				19C1DCA92787896300409CDC /* jsonGenericRepoView.swift in Sources */,
 				199EF10D2781E4F700F073AA /* E-Commer-CardView.swift in Sources */,
 				19C1DC9827875D1800409CDC /* commentModel.swift in Sources */,
 				19C1DC9427875A5900409CDC /* userModel.swift in Sources */,
@@ -481,6 +505,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		19C1DCA32787883D00409CDC /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		19C1DCA42787883D00409CDC /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 19C1DCA32787883D00409CDC /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 19C3860727777F6D0020161F /* Project object */;
 }

@@ -2,9 +2,14 @@
 
 import Foundation
 
-struct todoModel{
-    var userId : Int
-    var id : Int
-    var title : String
-    var completed : String
+struct todoModel : Codable {
+    var userId : Int = 0
+    var id : Int = 0
+    var title : String = ""
+    var completed : Bool = false
 }
+
+
+
+
+

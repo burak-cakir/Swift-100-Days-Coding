@@ -1,9 +1,4 @@
-//
-//  jsonViewSample.swift
-//  Swift-100days-Coding
-//
-//  Created by burak cakir on 6.01.2022.
-//
+
 
 import SwiftUI
 
@@ -17,9 +12,9 @@ struct jsonViewSample: View {
         
 
         List(json.getAll()){ user in
-            Text(String(user.id) + "-" + user.name)
+            Text(user.name + "-" + user.company!.name  )
             }
-        Text("test")
+        Text(String(json.getAll().count))
     }
 }
 struct jsonViewSample_Previews: PreviewProvider {
