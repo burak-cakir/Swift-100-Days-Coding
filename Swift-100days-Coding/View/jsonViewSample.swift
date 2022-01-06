@@ -10,7 +10,6 @@ struct jsonViewSample: View {
     
     var body: some View {
         
-
         List(json.getAll()){ user in
             Text(user.name + "-" + user.company!.name  )
             }

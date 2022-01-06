@@ -27,7 +27,7 @@ struct GenericRepository<T> where T : Codable{
         AF.request(baseUrl + url, method: .post, parameters: newModel, encoder: JSONParameterEncoder.default)
             .responseDecodable(of: T.self){ response in
                 
-                //Data eklendikten sonra eklenen datayı completion handler aracılığıyla iletiyorum
+              
                 completionHandler(response.value!)
         
             }

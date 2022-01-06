@@ -4,23 +4,27 @@ import SwiftUI
 
 struct jsonGenericRepoView: View {
     
-    var todoRepo = GenericRepository<todoModel>()
-    @State var todosList = [todoModel]()
+//    var todoRepo = GenericRepository<todoModel>()
+//    @State var todosList = [todoModel]()
+//
+    
+    var userRepo = GenericRepository<userModel>()
+    @State var userList = [userModel]()
     
     var body: some View {
         VStack{
          
-            List(todosList, id:\.title){item in
+            List(userList, id:\.name){item in
                 
-                Text(item.title)
+                Text(item.name)
                 
             }
             
         }
         .onAppear(){
-            todoRepo.getAll(url: "/todos"){ data in
+            userRepo.getAll(url: "/users"){ data in
                 
-                todosList = data;
+                userList = data;
                 
             }
         }

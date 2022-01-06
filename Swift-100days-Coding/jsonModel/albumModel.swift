@@ -2,8 +2,8 @@
 
 import Foundation
 
-struct albumModel{
-    var userId : Int
-    var id : Int
-    var title : String
+struct albumModel : Codable{
+    var userId : Int = 0
+    var id : Int = 0
+    var title : String = ""
 }
