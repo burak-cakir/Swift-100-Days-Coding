@@ -11,7 +11,8 @@ struct ContentView: View {
     var body: some View {
 //        ProductAlamofireExample()
 //        jsonGenericRepoView()
-        GenericRepoView()
+//        GenericRepoView()
+        AddTodoView()
     }
 }
 

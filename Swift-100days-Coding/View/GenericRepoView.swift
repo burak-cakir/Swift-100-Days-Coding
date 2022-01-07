@@ -13,24 +13,34 @@ struct GenericRepoView: View {
 //    @State var comlist = [commentModel]()
 //
     
-    var Repo = GenericRepository<photoModel>()
-    @State var list = [photoModel]()
+//    var Repo = GenericRepository<photoModel>()
+//    @State var list = [photoModel]()
+//
+    var Repo = GenericRepository<PostModel>()
+    @State var list = [PostModel]()
+    
+    
+    
+    @State var idm : String = "1"
+    
+    @State var postRepo = postRepository()
+    
+    @State var title : String = ""
+    @State var bodym : String = ""
     
     var body: some View {
         VStack{
          
             List(list, id:\.title){item in
                 
-                Text(item.title)
+                Text(String(item.id) + "-" + item.title.uppercased())
                 
             }
             
         }
-        VStack{
-            Text("GENERİC REPO")
-        }
+        
         .onAppear(){
-            Repo.getAll(url: "/photos"){ data in
+            Repo.getAll(url: "/posts"){ data in
                 
                 list = data;
                 

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1963A7212788DF5A00B7E619 /* PostRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1963A7202788DF5A00B7E619 /* PostRepository.swift */; };
+		1963A7232788F08200B7E619 /* TodosRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1963A7222788F08200B7E619 /* TodosRepository.swift */; };
+		1963A7252788F12C00B7E619 /* AddTodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1963A7242788F12C00B7E619 /* AddTodoView.swift */; };
 		199E271A277B8AB500CE6905 /* ProductCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199E2719277B8AB500CE6905 /* ProductCategory.swift */; };
 		199E271C277B9E6B00CE6905 /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199E271B277B9E6B00CE6905 /* ButtonStyle.swift */; };
 		199EF1062781C01B00F073AA /* E-Commerce-View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199EF1052781C01B00F073AA /* E-Commerce-View.swift */; };
@@ -46,6 +49,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1963A7202788DF5A00B7E619 /* PostRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRepository.swift; sourceTree = "<group>"; };
+		1963A7222788F08200B7E619 /* TodosRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosRepository.swift; sourceTree = "<group>"; };
+		1963A7242788F12C00B7E619 /* AddTodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTodoView.swift; sourceTree = "<group>"; };
 		199E2719277B8AB500CE6905 /* ProductCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCategory.swift; sourceTree = "<group>"; };
 		199E271B277B9E6B00CE6905 /* ButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyle.swift; sourceTree = "<group>"; };
 		199EF1052781C01B00F073AA /* E-Commerce-View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "E-Commerce-View.swift"; sourceTree = "<group>"; };
@@ -184,6 +190,7 @@
 				19C1DCA82787896300409CDC /* jsonGenericRepoView.swift */,
 				19C1DCAC27879CB600409CDC /* ProductAlamofireExample.swift */,
 				19C1DCAE2787A30A00409CDC /* GenericRepoView.swift */,
+				1963A7242788F12C00B7E619 /* AddTodoView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -197,6 +204,8 @@
 				19D93043278639CE00628283 /* OrderRepository.swift */,
 				19C1DC9F27875F1100409CDC /* jsonRepository.swift */,
 				19C1DCA62787892500409CDC /* GenericRepository.swift */,
+				1963A7202788DF5A00B7E619 /* PostRepository.swift */,
+				1963A7222788F08200B7E619 /* TodosRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -280,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				19C38629277B3F210020161F /* ProductSampleView.swift in Sources */,
+				1963A7212788DF5A00B7E619 /* PostRepository.swift in Sources */,
 				199EF10F2781F2D800F073AA /* E-CommerceDetail.swift in Sources */,
 				19C1DC9E27875E2F00409CDC /* todoModel.swift in Sources */,
 				19C1DCA72787892500409CDC /* GenericRepository.swift in Sources */,
@@ -287,12 +297,14 @@
 				19C1DCA227875F3800409CDC /* jsonViewSample.swift in Sources */,
 				19D93044278639CE00628283 /* OrderRepository.swift in Sources */,
 				199EF1082781C8BB00F073AA /* TabButtonView.swift in Sources */,
+				1963A7252788F12C00B7E619 /* AddTodoView.swift in Sources */,
 				19C1DC9627875C4900409CDC /* postModel.swift in Sources */,
 				19D93042278639BB00628283 /* OrderModel.swift in Sources */,
 				19C1DCAD27879CB600409CDC /* ProductAlamofireExample.swift in Sources */,
 				199EF11727844E4400F073AA /* PersonCV.swift in Sources */,
 				19C3861527777F6D0020161F /* ContentView.swift in Sources */,
 				19C38627277B3E830020161F /* Product.swift in Sources */,
+				1963A7232788F08200B7E619 /* TodosRepository.swift in Sources */,
 				19C3861327777F6D0020161F /* Swift_100days_CodingApp.swift in Sources */,
 				199EF1062781C01B00F073AA /* E-Commerce-View.swift in Sources */,
 				199EF11327843F6900F073AA /* PersonInfo.swift in Sources */,

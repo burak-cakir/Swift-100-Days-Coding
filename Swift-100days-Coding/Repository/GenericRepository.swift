@@ -3,12 +3,10 @@
 import Foundation
 import Alamofire
 
-
-
 struct GenericRepository<T> where T : Codable{
     
 //    var  baseUrl = "https://northwind.vercel.app/api";
-    var  baseUrl = "https://jsonplaceholder.typicode.com";
+    var  baseUrl = Config.apiURL
     
     func getAll(url: String, completianHandler: @escaping(([T]) -> Void)){
         
