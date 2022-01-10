@@ -1,21 +1,53 @@
-//
-//  AddTodoView.swift
-//  Swift-100days-Coding
-//
-//  Created by burak cakir on 8.01.2022.
-//
+
 
 import SwiftUI
 
 struct AddTodoView: View {
+    
+    @State var title : String = "hbj"
+    
+    @State var todos : [TodoModel] = [TodoModel]()
+    
+    var Repo = GenericRepository<TodoModel>()
+    @State var list = [TodoModel]()
     var todosRepository = TodosRepository()
     
-    @State var title : String = "jhhj"
     
+   
     
     
     var body: some View {
         VStack{
+            
+            VStack{
+             
+                List(list, id:\.title){item in
+                    
+                    if item.completed == true{
+                        Text(String(item.id) + "-" + item.title.lowercased())
+                            .foregroundColor(.red)
+                            .font(.largeTitle)
+                    }
+                    else {
+                        Text(String(item.id) + "-" + item.title.uppercased())
+                    }
+                    
+                    
+                   
+                    
+                }
+                
+            }
+            
+            .onAppear(){
+                Repo.getAll(url: "/todos"){ data in
+                    
+                    list = data;
+                    
+                }
+            }
+            
+            
             TextField("Title", text: $title)
                 .padding()
                 .foregroundColor(.red)
@@ -25,15 +57,20 @@ struct AddTodoView: View {
            
                 
             
-            Button("Ekle"){
-                let todoModel = TodoModel(userId: 0, id: 0, title: title, completed: false)
-                todosRepository.add( todoModel: todoModel){ newCategory in
-                    print(newCategory)
-                    
-                }
+            Button("Add"){
+                let todomodel = TodoModel( userId: 1, title: "asda", completed: false)
+                 
+                todosRepository.add(todoModel: todomodel){ newCategory in
+                     todos.append(newCategory)
+                     
+                     
+                     
+                 
+                 }
             }
-            Text("todoview REPO")
+           
         }
+            Text("todoview REPO")
     }
 }
 
@@ -42,3 +79,4 @@ struct AddTodoView_Previews: PreviewProvider {
         AddTodoView()
     }
 }
+

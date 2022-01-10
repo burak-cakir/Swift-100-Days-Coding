@@ -29,13 +29,12 @@ class TodosRepository{
     //Bu fonksiyon web api ye category ekler. Daha sonra eklenilen kategoriyi (yani servisin döndüğü kategoriyi bana completion Handler olarak verir)
     func add(todoModel: TodoModel, completionHandler:  @escaping (TodoModel)-> Void){
         
-        guard let url = URL(string: Config.apiURL + "/todos") else {return}
+        guard let url = URL(string: "https://jsonplaceholder.typicode.com/todos") else {return}
         
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
         
-        let postString = "userID=1&title=\(todoModel.title)&completed=false"
-        
+        let postString = "id=101&userID=1&title=title&completed=false"
         
        
         
@@ -48,7 +47,7 @@ class TodosRepository{
                 
                 if let returnData = data{
                     let decodeData = try JSONDecoder().decode(TodoModel.self, from: returnData)
-                    
+                 
                     completionHandler(decodeData)
                     
                     
