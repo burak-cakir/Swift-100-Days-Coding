@@ -12,7 +12,8 @@ struct ContentView: View {
 //        ProductAlamofireExample()
 //        jsonGenericRepoView()
 //        GenericRepoView()
-        AddTodoView()
+//        AddTodoView()
+        GradientButton()
     }
 }
 
