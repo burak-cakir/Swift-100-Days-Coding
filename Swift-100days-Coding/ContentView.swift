@@ -13,7 +13,8 @@ struct ContentView: View {
 //        jsonGenericRepoView()
 //        GenericRepoView()
 //        AddTodoView()
-        GradientButton()
+//         GradientButton()
+        MarqueeTextAnimation()
     }
 }
 
